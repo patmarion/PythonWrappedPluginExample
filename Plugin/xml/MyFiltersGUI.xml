@@ -1,0 +1,5 @@
+<ParaViewFilters>
+  <Category name="My" menu_label="&amp;My Filters">
+    <Filter name="MyFilter" />
+  </Category>
+</ParaViewFilters>

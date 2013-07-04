@@ -1,0 +1,27 @@
+<ServerManagerConfiguration>
+  <ProxyGroup name="filters">
+    <SourceProxy name="MyFilter" class="vtkMyFilter" label="My Filter">
+      <Documentation
+         short_help="My Filter."
+         long_help="My Filter.">
+      </Documentation>
+
+      <InputProperty
+         name="Input"
+         port_index="0"
+         command="SetInputConnection">
+        <ProxyGroupDomain name="groups">
+          <Group name="sources"/>
+          <Group name="filters"/>
+        </ProxyGroupDomain>
+        <DataTypeDomain name="input_type">
+          <DataType value="vtkPolyData"/>
+        </DataTypeDomain>
+        <Documentation>
+          Set the input poly data
+        </Documentation>
+      </InputProperty>
+
+   </SourceProxy>
+  </ProxyGroup>
+</ServerManagerConfiguration>
